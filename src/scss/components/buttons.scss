@@ -1,0 +1,37 @@
+@import "../abstract/variables.scss";
+
+.btn {
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    &_outlined {
+        border: 2px solid $primary_color_1;
+        border-radius: 10rem;
+        color: $primary_color_1;
+        font-weight: 600;
+    }
+    &_bg {
+        background-color: $primary_color_1;
+        color: $white;
+        border-radius: 10rem;
+        border: 2px solid $primary_color_1;
+        margin-left: 1rem;
+    }
+}
+
+.btn_2 {
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    &_outlined {
+        border: 2px solid $primary_color_1;
+        border-radius: 10rem;
+        color: $primary_color_1;
+        font-weight: 600;
+        margin-left: 1rem;
+    }
+    &_bg {
+        background-color: $primary_color_1;
+        color: $white;
+        border-radius: 10rem;
+        border: 2px solid $primary_color_1;
+    }
+}

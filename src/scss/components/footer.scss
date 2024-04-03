@@ -1,0 +1,115 @@
+@import "../abstract/variables.scss";
+
+.footer {
+    width: 100%;
+    margin-top: 10rem;
+    background-color: $secondary_color_1;
+    border-radius: 4rem;
+    &_container {
+        padding: 8rem 0;
+    }
+    &_top {
+        background-color: $primary_color_1;
+        border-radius: 1rem;
+        padding: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.5rem;
+        &_heading {
+            width: 35%;
+            color: $white;
+        }
+        &_form {
+            width: 60%;
+            background-color: $secondary_color_3;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            &_input {
+                padding: 1rem;
+                width: 73%;
+                border-radius: 10px;
+            }
+            &_btn {
+                background-color: $primary_color_1;
+                outline: none;
+                border: none;
+                color: $white;
+                width: 25%;
+                cursor: pointer;
+                border-radius: 10px;
+                margin-left: 1rem;
+            }
+        }
+    }
+    &_middle {
+        border-bottom: 1px solid $secondary_color_2;
+    }
+    &_bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4rem;
+
+        &_list {
+            list-style: none;
+            display: flex;
+        }
+        &_link {
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .footer {
+        &_container {
+            padding: 3rem 2rem;
+        }
+        &_top {
+            display: block;
+            border-radius: 3rem;
+            &_heading {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            &_form {
+                width: 100%;
+                &_input {
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 5rem;
+                }
+                &_btn {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 1rem;
+                    height: 5rem;
+                }
+            }
+        }
+        &_middle {
+            border-bottom: 1px solid $secondary_color_2;
+        }
+        &_bottom {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &_logo {
+                order: 1;
+                margin-bottom: 2rem;
+            }
+            &_list {
+                order: 2;
+                margin-bottom: 2rem;
+            }
+            &_copyright {
+                order: 3;
+                font-size: 1rem;
+            }
+        }
+    }
+}
